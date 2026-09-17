@@ -14,13 +14,15 @@
         </header>
 
         <div class="dashboard">
-            <!-- Painel de "Visão" do Jogo (Simplificada) -->
+            <!-- Tela Virtual do Jogo (Abstrata / Estilo Radar de DS) -->
             <div class="panel">
-                <h2>1. Entrada Sensorial (Tela)</h2>
-                <div id="canvas-sensor" class="sensor-grid">
-                    <!-- Pixels simulados da tela do jogo -->
+                <h2>1. Tela Virtual (ACWW World)</h2>
+                <div id="ds-screen">
+                    <div id="canvas-sensor" class="sensor-grid">
+                        <!-- Pixels gerados via JS simulando o ambiente da vila -->
+                    </div>
                 </div>
-                <span id="status-sensor">Status: Aguardando estímulo...</span>
+                <span id="status-sensor">Status: Mapeando terreno...</span>
             </div>
 
             <!-- Painel da Rede Neural / Cérebro -->
