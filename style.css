@@ -139,3 +139,12 @@ button:disabled {
     color: #8b949e;
     cursor: not-allowed;
 }
+
+#ds-screen {
+    background-color: #000;
+    border: 4px solid #333;
+    border-radius: 6px;
+    padding: 8px;
+    display: inline-block;
+    margin: 10px 0;
+}
