@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fly-ACWW Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <header>
+            <h1>Fly-ACWW Agent</h1>
+            <p>Simulador de Agente Neural Biológico para Emulador de DS</p>
+        </header>
+
+        <div class="dashboard">
+            <!-- Painel de "Visão" do Jogo (Simplificada) -->
+            <div class="panel">
+                <h2>1. Entrada Sensorial (Tela)</h2>
+                <div id="canvas-sensor" class="sensor-grid">
+                    <!-- Pixels simulados da tela do jogo -->
+                </div>
+                <span id="status-sensor">Status: Aguardando estímulo...</span>
+            </div>
+
+            <!-- Painel da Rede Neural / Cérebro -->
+            <div class="panel">
+                <h2>2. Conectoma (Rede Neural)</h2>
+                <div id="neural-net-view">
+                    <div class="neuron" id="n-visual">Visual</div>
+                    <div class="neuron" id="n-motor-up">Cima</div>
+                    <div class="neuron" id="n-motor-action">Ação (A)</div>
+                </div>
+            </div>
+
+            <!-- Painel de Ações Motoras -->
+            <div class="panel">
+                <h2>3. Saída Motora (Comandos)</h2>
+                <div id="output-log">
+                    <p>> Sistema inicializado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-iniciar" onclick="iniciarSimulacao()">Iniciar Simulação</button>
+            <button id="btn-parar" onclick="pararSimulacao()" disabled>Parar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
