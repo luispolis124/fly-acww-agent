@@ -1,0 +1,28 @@
+# Dependências do Node.js (para quem for rodar a bridge localmente)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ROMs, arquivos de imagem de disco e arquivos protegidos por copyright
+*.nds
+*.srl
+*.gba
+*.gbc
+*.gb
+*.rom
+*.iso
+*.bin
+
+# Arquivos de salvamento de emuladores (Saves, states, NVRAM)
+*.sav
+*.dsv
+*.sta
+*.state*
+
+# Arquivos de sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
